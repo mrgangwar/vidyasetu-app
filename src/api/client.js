@@ -2,8 +2,8 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const apiClient = axios.create({
-    // 💡 TIP: Check your Laptop IP daily! 
-    baseURL: 'http://10.54.31.32:5000/api', 
+    
+    baseURL: process.env.EXPO_PUBLIC_API_URL, 
     timeout: 15000, 
 });
 
